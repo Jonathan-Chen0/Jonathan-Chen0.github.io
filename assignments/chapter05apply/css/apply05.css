@@ -39,7 +39,7 @@ nav {
     margin-bottom: 1%;
     background-color: #67afcb;
 	position: -webkit-sticky;
-	position: -sticky;
+	position: sticky;
 	top: 0;
 }
 
@@ -52,7 +52,7 @@ nav li {
     font-size: 1.5em;
     padding: 4%;
 	display: inline-block;
-	font-family: B612;
+	font-family: 'B612';
 }
 
 nav li a {
