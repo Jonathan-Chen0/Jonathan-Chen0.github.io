@@ -5,7 +5,7 @@ styles.css
 */
 
 /* CSS Reset */
-body, header, nav, main, footer, div, h1, h2{
+body, header, nav, main, footer, div, h1, h2, article, section{
 	margin: 0;
 	padding: 0;
 	border: 0;
@@ -101,23 +101,23 @@ main{
 	font-size: 1.5em;
 }
 
-#html-assignments ul{
+.assignment-type ul{
 	list-style-type: none;
 	margin: 0;
 	padding: 0;
 }
 
-#html-assignments li a{
+.assignment-type li a{
 	color: gray;
 	font-size: 1.2em;
 }
 	/* Home page rules */
-#image{
-	width: 100%;
+#index-image{
+	max-width: 100%;
 	text-align: center;
 }
 
-#image img{
+#index-image img{
 	border-radius: 15px;
 	border: 3px solid #2c589e;
 	max-width: 100%;
@@ -125,7 +125,7 @@ main{
 	margin-right: auto;
 }
 
-#image p{
+#index-image p{
 	font-size: 1.25em;
 	margin-left: auto;
 	margin-right: auto;
@@ -207,10 +207,13 @@ footer p a{
 	
 	/* tablet main content rules */
 		/* Assignments page rules */
+	.assignment-type{
+		display: grid;
+		grid-template-columns: auto auto auto auto;
+	}
 	.chapter{
-		width: 25%;
-		float: left;
-		margin-bottom: 1em;
+		width: 100%;
+		margin-bottom: 1%;
 	}
 
 		/* About page rules */
@@ -224,9 +227,11 @@ footer p a{
 		margin-left: auto;
 		margin-right: auto;
 		border: 3px solid #2c589e;
+		box-shadow: 5px 5px 8px #000;
 	}
 	
-	#about-image p{
+	#about-image figcaption{
+		margin-top: 1%;
 		margin-left: auto;
 		margin-right: auto;
 		text-align: center;
@@ -289,9 +294,10 @@ footer p a{
 	}
 
 		/* Assignments page rules */
-	.chapter{
-		width: 20%;
+	.assignment-type{
+		grid-template-columns: auto auto auto auto auto;
 	}
+
 		/* About page rules */
 
 	#about-image{
