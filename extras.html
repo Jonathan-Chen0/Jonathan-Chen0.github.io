@@ -31,15 +31,69 @@
 	</nav>
 	
 	<!--Extras/fun stuff-->
-	<main>
+	<main class="extras-grid">
 	
-		<div id="cadences" class="tablet-desktop">
+		<div id="cadences" class="desktop">
 			<h2 class="title">Percussion Cadences</h2>
-			<embed class="pdf" src="extras/Bread.pdf" width="400" height="500">
-			<embed class="pdf" src="extras/Cabbage.pdf" width="400" height="500">
-			<embed class="pdf" src="extras/Tomato.pdf" width="400" height="500">
-			</div>
-	
+			<embed class="pdf" src="extras/cadences/Bread.pdf" width="400" height="500">
+			<embed class="pdf" src="extras/cadences/Cabbage.pdf" width="400" height="500">
+			<embed class="pdf" src="extras/cadences/Tomato.pdf" width="400" height="500">
+		</div>
+
+		<div id="form">
+			<h2 class="title">Random Questions</h2>
+			<form>
+				<fieldset>
+					<legend>Information</legend>
+					<label for="email">Email: </label>
+					<input name="email" id="email" required>
+				</fieldset>
+				<fieldset>
+					<legend>Questions</legend>
+					<label for="scale">Of these keys, which is your favorite?</label>
+					<select name="scale" id="scale">
+						<option value="F#Maj">F# Major</option>
+						<option value="EbMaj">Eb Major</option>
+						<option value="BbMaj">Bb Major</option>
+						<option value="EMin">E Minor</option>
+						<option value="D#Min">D# Minor</option>
+						<option value="CMin">C Minor</option>
+						<option value="BbMin">Bb Minor</option>
+						<option value="AbMin">Ab Minor</option>
+					</select>
+					<br>
+					<p>Which fruit is best?</p>
+					<label><input type="radio" name="fruit" value="Breadfruit">Breadfruit</label>
+					<label><input type="radio" name="fruit" value="Currant">Currant</label>
+					<label><input type="radio" name="fruit" value="Quince">Quince</label>
+					<label><input type="radio" name="fruit" value="Loquat">Loquat</label>
+					<br><br>
+					<label for="ice-cream-sandwich">What's on the outside of an ice cream sandwich?:</label>
+					<input name="ice-cream-sandwich-answer" id="ice-cream-sandwich" required>
+					<p>Did you ask your squad leader?</p>
+					<label><input type="radio" name="squad-leader" value="Yes">Yes</label>
+					<label><input type="radio" name="squad-leader" value="No">No</label>
+					<br><br>
+					<label for="limit">Where is the limit?:</label>
+					<input name="limit-answer" id="limit" required>
+					<br><br>
+					<label for="match">Can a match box?:</label>
+					<input name="match-answer" id="match" required>
+				</fieldset>
+				<div class="form-button-container">
+					<input type="reset" value="Reset" class="form-button">
+				</div>
+				<div class="form-button-container">
+					<input type="submit" value="Submit" class="form-button">
+				</div>
+			</form>
+		</div>
+
+		<div id="extras-tutorial">
+			<h2 class="title">Tutorial</h2>
+			<p><a href="extras/musescore/tutorial.html">How to create sheet music in MuseScore</a></p>
+		</div>
+			
 	</main>
 	
 	<footer>
