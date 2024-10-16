@@ -15,12 +15,25 @@
 	<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
 </head>
 <body>
-	<header>
+	<nav class="mobile">
+		<ul id="mobile-nav">
+			<li><a href="assignments.html">Assignments</a></li>
+			<li><a href="projects.html">Projects</a></li>
+			<li><a href="index.html">Home</a></li>
+			<li><a href="about.html">About Me</a></li>
+			<li><a href="extras.html">Extras</a></li>
+		</ul>
+		<a class="menu-icon" onclick="mobileNav()">
+			<div>&#9776;</div>
+		</a>
+	</nav>
+
+	<header id="page-header">
 		<h1>Jonathan Chen</h1>
 		<h2>I code.</h2>
 	</header>
 	
-	<nav>
+	<nav class="tablet-desktop">
 		<ul>
 			<li><a href="assignments.html">Assignments</a></li>
 			<li><a href="projects.html">Projects</a></li>
@@ -44,5 +57,8 @@
 		<p><a href="mailto:jonathan.chen@stu.cvccworks.edu">jonathan.chen@stu.cvccworks.edu</a></p>
 		<p>&copy; Copyright 2024. All Rights Reserved.</p>
 	</footer>
+
+	<script src="javascript/script.js"></script>
+
 </body>
 </html>
