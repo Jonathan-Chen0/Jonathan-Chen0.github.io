@@ -273,18 +273,34 @@ input{
 	/* Footer rules */
 footer{
 	margin-top: 3%;
-	clear: both;
+}
+
+.footer-info{
+	width: 85%;
+	text-align: center;
+	float: left;
 }
 
 footer p{
 	color: gray;
 	font-family: Georgia, "Times New Roman", serif;
-	text-align: center;
+	margin: 0.5em 0;
 }
 
 footer p a{
 	color: gray;
 	text-decoration: none;
+}
+
+footer div.social-media{
+	height: 100%;
+	width: 10%;
+	margin-top: 1em;
+	float: left;
+}
+
+footer div.social-media img{
+	max-width: 100%;
 }
 
 /* Tablet style rules */
@@ -328,6 +344,11 @@ footer p a{
 		display: grid;
 		grid-template-columns: auto auto auto auto;
 	}
+
+	.assignment-type h2.title{
+		grid-column: 1 / span 4;
+	}
+
 	.chapter{
 		width: 100%;
 		margin-bottom: 1%;
@@ -420,6 +441,16 @@ footer p a{
 		border-radius: 15px;
 	}
 
+	/* Desktop footer rules */
+	.footer-info{
+		width: 92.5%;
+	}
+
+	footer div.social-media{
+		width: 7.5%;
+		margin-bottom: 1em;
+	}
+
 	/* Desktop main content rules */
 	.title{
 		font-size: 2.5em;
@@ -429,6 +460,10 @@ footer p a{
 		/* Assignments page rules */
 	.assignment-type{
 		grid-template-columns: auto auto auto auto auto;
+	}
+
+	.assignment-type h2.title{
+		grid-column: 1 / span 5;
 	}
 
 		/* Home page rules */
