@@ -539,22 +539,22 @@ footer p a img{
 
 	.extras-grid{
 		display: grid;
-		grid-template-columns: auto auto auto auto;
+		grid-template-columns: auto auto auto auto auto;
 		grid-gap: 1%;
 	}
 
 	#cadences{
 		display: block;
-		grid-column: 1 / span 3;
+		grid-column: 1 / span 5;
 	}
 
 	.cadence{
 		display: block;
-		margin: 2%;
-		width: 28.5%;
+		margin: 0.9%;
+		width: 18%;
+		height: auto;
 		float: left;
 	}
-
 
 	.pdf{
 		display: block;
@@ -568,6 +568,7 @@ footer p a img{
 		margin: 0 auto;
 		border-radius: 75px;
 		border: 3px solid #2c589e;
+		width: 75%;
 	}
 
 	#tutorial{
